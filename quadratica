@@ -1,0 +1,24 @@
+def delta(a,b,c):
+  delta=(b**2)-(4*a*c)
+  return delta
+
+
+def Xpositivo(a,b,delta):
+  xp=(-b+delta**(1/2))/(2*a)
+  return xp
+
+def Xnegativo(a,b,delta):
+  xn=(-b-delta**(1/2))/(2*a)
+  return xn 
+
+
+a = 88
+b = 4
+c = 16
+
+
+xpositivo= Xpositivo(a,b,c)
+print("xpositivo", xpositivo)
+
+xnegativo= Xnegativo(a,b,c)
+print("xnegativo", xnegativo)
